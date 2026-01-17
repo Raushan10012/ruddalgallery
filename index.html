@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rudal Nature Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h1 class="logo">Rudal Gallery</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h1>Moments Nature Never Repeats</h1>
+    <p>Captured with patience, not pressure.</p>
+    <button onclick="scrollToGallery()">View Gallery</button>
+  </div>
+</section>
+
+<!-- GIFT / CARD SECTION -->
+<section class="cards">
+  <div class="card">
+    <img src="images/nature1.jpg">
+    <div class="overlay">Quiet Landscapes</div>
+  </div>
+  <div class="card">
+    <img src="images/nature2.jpg">
+    <div class="overlay">Wild Encounters</div>
+  </div>
+</section>
+
+<!-- FEATURE -->
+<section class="feature">
+  <img src="images/feature.jpg">
+  <div class="feature-text">
+    <h2>New Captures</h2>
+    <p>
+      Every image is captured in silence, waiting for nature
+      to reveal itself rather than forcing the moment.
+    </p>
+    <button>Explore Stories</button>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <img src="images/nature1.jpg">
+  <img src="images/nature2.jpg">
+  <img src="images/nature3.jpg">
+  <img src="images/nature4.jpg">
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span class="close">&times;</span>
+  <img id="lightbox-img">
+  <span class="prev">&#10094;</span>
+  <span class="next">&#10095;</span>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <img src="images/my-photo.jpg">
+  <div>
+    <h2>About Me</h2>
+    <p>
+      I don’t chase perfect frames.
+      I wait for honest ones.
+      This gallery is a journal of moments nature allowed me to witness.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Contact</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-overlay">
+    <blockquote>
+      “Nature does not perform for the camera.
+      The photographer learns to wait.”
+    </blockquote>
+    <span>— Rudal Gallery</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
